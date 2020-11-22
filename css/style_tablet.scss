@@ -36,6 +36,7 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		min-height: 245px;
 	}
 
 	.title_big {
@@ -44,7 +45,7 @@
 	}
 
 	.trend {
-		width: calc(50% - 3px);
+		width: calc(50% - 1.5px);
 		margin-bottom: 0;
 
 			&:nth-child(odd) {

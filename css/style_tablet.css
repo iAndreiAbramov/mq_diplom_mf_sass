@@ -45,13 +45,14 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    min-height: 245px;
   }
   .title_big {
     font-size: 18px;
     margin-bottom: 18px;
   }
   .trend {
-    width: calc(50% - 3px);
+    width: calc(50% - 1.5px);
     margin-bottom: 0;
   }
   .trend:nth-child(odd) {
