@@ -66,5 +66,33 @@
   .hamburger {
     display: none;
   }
+  .page {
+    padding: 65px 0;
+  }
+  .title_big {
+    font-size: 20px;
+    line-height: 29px;
+  }
+  .trends-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .trend {
+    padding: 25px;
+    margin-right: 3px;
+    margin-bottom: 0;
+    width: calc(25% - 3px);
+  }
+  .trend:last-child {
+    margin-right: 0;
+  }
+  .trend__title {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=style_desktop.css.map */

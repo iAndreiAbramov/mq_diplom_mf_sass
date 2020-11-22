@@ -126,10 +126,16 @@ body {
 .page {
   padding: 45px 0;
 }
+
 .trends {
+  margin-bottom: 45px;
+}
+
+.trends-wrapper {
   display: flex;
   flex-direction: column;
 }
+
 .title {
   color: #0f0d0e;
   font-weight: 700;
@@ -235,3 +241,71 @@ body {
 .trend-lime {
   background-image: url('../images/trend4.jpg');
 }
+
+.articles {
+  margin-bottom: 45px;
+}
+.article {
+    margin-bottom: 35px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #eeeeee;
+    }
+
+		&__img {
+      width: 100%;
+      margin-bottom: 14px;
+    }
+    
+    &__description {
+      margin-bottom: 24px;
+    }
+
+		&__title {
+      margin-bottom: 22px;
+      line-height: 1.25;
+      font-size: 16px;
+      line-height: 1.2;
+      color: #0f0d0e;
+      font-weight: 700;
+      text-transform: uppercase;
+		}
+
+		&__meta {
+      font-size: 12px;
+      margin-bottom: 24px;
+		}
+
+		&__date {
+      margin-right: 14px;
+      color: #888888;
+		}
+
+		&__author {
+      color: #000000;
+      font-weight: 700;
+		}
+
+		&__preview {
+      font-size: 14px;
+      line-height: 1.42;
+      color: #0f0d0e;
+      font-weight: 400;
+      p {
+        margin-bottom: 16px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+     }
+		}
+}
+
+

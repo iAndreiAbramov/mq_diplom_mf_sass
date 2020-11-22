@@ -27,4 +27,37 @@
 			font-size: 40px;
 		}
 	}
+
+	.page {
+		padding: 50px 0;
+	}
+	
+	.trends-wrapper {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.title_big {
+		font-size: 18px;
+		margin-bottom: 18px;
+	}
+
+	.trend {
+		width: calc(50% - 3px);
+		margin-bottom: 0;
+
+			&:nth-child(odd) {
+				margin-right: 3px;
+			}
+
+			&:nth-child(n + 3) {
+				margin-top: 3px;
+			}
+
+			&__title {
+				font-size: 17px;
+				line-height: 1.29;
+			}
+	}
 }
