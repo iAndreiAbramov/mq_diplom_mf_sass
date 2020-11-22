@@ -1,0 +1,50 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.container {
+  margin: 0;
+  padding: 0 15px;
+}
+
+.main-header {
+
+  display: flex;
+
+  &__logo {
+    display: block;
+    width: 73%;
+   
+  &__row {
+
+    }  
+
+  }
+  &__title {
+    margin: 0;
+    padding: 0;
+
+  }
+
+  &__title-text {
+  }
+
+}
+
+.menu {
+
+  &__list {
+  }
+
+  &__item {
+  }
+
+  &__link {
+  }
+}
+
+

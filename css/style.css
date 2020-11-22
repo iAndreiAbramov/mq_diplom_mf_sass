@@ -1,0 +1,33 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.container {
+  margin: 0;
+  padding: 0 15px;
+}
+
+.main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  background: url(../images/banner-mobile.jpg) center center / cover no-repeat;
+}
+
+.main-header__logo {
+  display: block;
+  width: 73%;
+}
+
+.main-header__title {
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
