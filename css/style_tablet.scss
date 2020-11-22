@@ -1,6 +1,5 @@
- @media (min-width: 641px) and (max-width: 1200px) {
-
-   .main-header {
+@media (min-width: 641px) and (max-width: 1200px) {
+	.main-header {
 		display: block;
 		min-height: 390px;
 		padding-top: 55px;
@@ -27,4 +26,5 @@
 		&__title-text {
 			font-size: 40px;
 		}
+	}
 }

@@ -5,12 +5,21 @@
     background: url("../images/banner-bg.jpg") center center/cover no-repeat;
   }
   .main-header__row {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .main-header__logo {
-    order: 0;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
     margin-top: 0;
     width: 180px;
   }
@@ -21,14 +30,19 @@
     font-size: 45px;
     line-height: 1.67;
   }
-
   .menu {
     display: block;
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
     position: relative;
     z-index: 3;
   }
@@ -49,8 +63,8 @@
     text-decoration: none;
     color: inherit;
   }
-
   .hamburger {
     display: none;
   }
 }
+/*# sourceMappingURL=style_desktop.css.map */
