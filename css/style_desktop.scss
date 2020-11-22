@@ -1,0 +1,65 @@
+@media (min-width: 1201px) {
+
+  .main-header {
+    padding-top: 35px;
+    padding-bottom: 145px;
+    background: url("../images/banner-bg.jpg") center center / cover no-repeat;
+
+    &__row {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__logo {
+      order: 0;
+      margin-top: 0;
+      width: 180px;
+    }
+
+    &__title {
+      margin: 125px 0 0;
+    }
+
+    &__title-text {
+      font-size: 45px;
+      line-height: 1.67;
+    }
+  }
+
+  .menu {
+    display: block;
+    order: 1;
+
+    &__list {
+      display: flex;
+      justify-content: end;
+      position: relative;
+      z-index: 3;
+    }
+
+    &__item {
+      margin-right: 2.6em;
+      font-size: 13px;
+      color: #ffffff;
+      font-weight: 400;
+      text-transform: uppercase;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  .hamburger {
+    display: none;
+  }
+}

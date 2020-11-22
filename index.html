@@ -6,14 +6,20 @@
   <title>Document</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/fonts.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style_tablet.css">
+  <link rel="stylesheet" href="./css/style_desktop.css">
 </head>
 
 <body>
+
   <header class="main-header container">
+    <div class="content-wrapper">
     <div class="main-header__row">
       <nav class="menu">
         <ul class="menu__list">
+          
           <li class="menu__item">
             <a href="#" class="menu__link">Главная</a>
           </li>
@@ -34,14 +40,17 @@
           </li>
         </ul>
       </nav>
-      <img src="./svg/noemi-logo.svg" alt="Ноеми лого" class="header__logo">
+      <img src="./svg/noemi-logo.svg" alt="Ноеми лого" class="main-header__logo">
+
+      <div class="hamburger">
+        <a href="#" class="hamburger__link"><span class="hamburger__text visualy-hidden">Главное меню</span></a>
+      </div>
     </div>
 
     <div class="main-header__title">
-
-      <h1 class="main-header__title-text">Блог о творчестве, спорте, и образе жизни</h1>
-
+      <h1 class="main-header__title-text">Блог о творчестве, спорте, и образе жизни<h1>
     </div>
+  </div>
   </header>
 </body>
 
