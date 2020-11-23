@@ -357,6 +357,15 @@ body {
   padding: 0 15px;
 }
 
+.sidebar__block {
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.sidebar__block:last-child {
+  margin-bottom: 0;
+}
+
 .post {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -320,6 +320,12 @@ body {
 .sidebar {
   padding: 0 15px;
   &__block {
+    width: 100%;
+    margin-bottom: 45px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -345,6 +351,55 @@ body {
   font-size: 12px;
   color: #888888;
 }
+
+.sidebar {
+
+  &__form {
+  }
+
+  &__field {
+  }
+
+  &__field_search {
+  }
+
+  &__field_email {
+  }
+}
+.button {
+}
+.button_search {
+}
+.visualy-hidden {
+}
+.title {
+}
+.title_big {
+}
+.button_submit {
+}
+.tags-list {
+
+  &__item {
+  }
+
+  &__link {
+  }
+}
+.topics-list {
+
+  &__item {
+  }
+
+  &__link {
+  }
+}
+.topics {
+
+  &__counter {
+  }
+}
+
 
 
 
