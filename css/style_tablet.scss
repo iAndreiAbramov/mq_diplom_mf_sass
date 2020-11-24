@@ -31,7 +31,7 @@
 	.page {
 		padding: 50px 0;
 	}
-	
+
 	.trends-wrapper {
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -61,4 +61,90 @@
 				line-height: 1.29;
 			}
 	}
+
+	.page-content {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 50px;
+	}
+
+	.container {
+		padding: 0 40px;
+	}
+
+	.articles {
+		flex-shrink: 0;
+		width: 56%;
+		margin-right: 5%;
+		margin-bottom: 0;
+	}
+
+	.article {
+		margin-bottom: 40px;
+	
+		&__preview {
+			font-size: 15px;
+		}
+	}
+}
+	.article-title {
+		font-size: 17px;
+	}
+
+	.sidebar {
+		flex-grow: 0;
+		padding: 0;
+		
+		&__block {
+			margin-bottom: 60px;
+
+			&:first-child {
+				margin-bottom: 60px;
+			}
+		}
+}
+
+.post {
+
+		&__image {
+		}
+
+		&__description {
+		}
+}
+.post_sidebar {
+}
+.date {
+}
+.article-title {
+}
+.article-title_post {
+}
+.visualy-hidden {
+}
+.button {
+}
+.button_search {
+}
+.button_submit {
+}
+.tags-list {
+
+		&__item {
+		}
+
+		&__link {
+		}
+}
+.topics-list {
+
+		&__item {
+		}
+
+		&__link {
+		}
+}
+.topics-counter {
+}
+
 }

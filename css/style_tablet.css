@@ -65,5 +65,36 @@
     font-size: 17px;
     line-height: 1.29;
   }
+  .page-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .container {
+    padding: 0 40px;
+  }
+  .articles {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: 56%;
+    margin-right: 5%;
+    margin-bottom: 0;
+  }
+  .article {
+    margin-bottom: 40px;
+  }
+  .article__preview {
+    font-size: 15px;
+  }
+  .sidebar {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=style_tablet.css.map */
