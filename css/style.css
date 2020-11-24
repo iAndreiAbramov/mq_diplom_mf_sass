@@ -10,7 +10,8 @@ body {
 
 .container {
   margin: 0;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .content-wrapper {
@@ -184,6 +185,11 @@ body {
   margin-bottom: 24px;
 }
 
+.title_sidebar {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
 .trend {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -246,10 +252,6 @@ body {
   font-weight: 700;
   color: #b59f5b;
   text-transform: uppercase;
-}
-
-.tag-row__item:hover {
-  text-decoration: underline;
 }
 
 .tag-row__item:last-child {
@@ -491,8 +493,8 @@ body {
   display: block;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  margin: 8px 8px 0 0;
-  padding: 8px 12px;
+  margin: 7px 6px 0 0;
+  padding: 7px 9px;
   background-color: rgba(244, 243, 241, 0);
   border: 3px solid #eeeeee;
   font-size: 12px;
@@ -503,11 +505,6 @@ body {
 
 .tags-list__item:last-child {
   margin: 8px 0 0 0;
-}
-
-.tags-list__item:hover {
-  background-color: rgba(244, 243, 241, 0);
-  border: 3px solid #b59f5b;
 }
 
 .tags-list__link {
@@ -550,5 +547,183 @@ body {
   font-size: 12px;
   color: #b59f5b;
   font-weight: 700;
+}
+
+.products {
+  min-width: 320px;
+}
+
+.products-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.product {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.product:last-child {
+  margin-bottom: 0;
+}
+
+.product__image {
+  display: block;
+  position: relative;
+  min-width: 87%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+.product__description {
+  position: relative;
+  margin-top: -30px;
+  padding: 55px 22px 25px;
+  min-width: 100%;
+  border: 3px solid #b59f5b;
+  color: #0f0d0e;
+}
+
+.product__title {
+  font-size: 17px;
+  line-height: 1.29;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.product__text {
+  margin-bottom: 12px;
+  font-size: 15px;
+  line-height: 1.47;
+}
+
+.product__offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+}
+
+.product__prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.higlighted-link {
+  text-decoration: none;
+}
+
+.higlighted-text {
+  color: #b59f5b;
+}
+
+.price {
+  display: block;
+  font-weight: 700;
+}
+
+.price--old {
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.price--new {
+  font-size: 20px;
+}
+
+.price--hidden {
+  display: none;
+}
+
+.shop-link {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 15px 30px;
+  text-decoration: none;
+  background-color: #b59f5b;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.shop-link:hover {
+  background-color: #000000;
+}
+
+.footer {
+  margin: 0;
+  padding-bottom: 45px;
+}
+
+.footer__socials {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 17%;
+  background-color: #f4f7f6;
+}
+
+.footer__social {
+  width: 20px;
+  height: 20px;
+  margin-right: 10%;
+}
+
+.footer__social:last-child {
+  margin-right: 0;
+}
+
+.footer__social--twitter {
+  background: url("../svg/004-twitter.svg") center center/cover no-repeat;
+}
+
+.footer__social--pinterest {
+  background: url("../svg/001-pinterest.svg") center center/cover no-repeat;
+}
+
+.footer__social--facebook {
+  background: url("../svg/002-facebook-logo.svg") center center/cover no-repeat;
+}
+
+.footer__social--instagram {
+  background: url("../svg/005-instagram.svg") center center/cover no-repeat;
+}
+
+.footer__social--tumblr {
+  background: url("../svg/003-tumblr.svg") center center/cover no-repeat;
+}
+
+.footer__copyright {
+  margin-top: 50px;
+  font-size: 12px;
+  color: #999999;
+  font-weight: 700;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

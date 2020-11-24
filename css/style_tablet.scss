@@ -39,9 +39,16 @@
 		min-height: 245px;
 	}
 
-	.title_big {
-		font-size: 18px;
-		margin-bottom: 18px;
+	.title {
+		&_big {
+			font-size: 18px;
+			margin-bottom: 24px;
+		}
+
+		&_sidebar {
+			font-size: 14px;
+			margin-bottom: 24px;
+		}
 	}
 
 	.trend {
@@ -69,7 +76,8 @@
 	}
 
 	.container {
-		padding: 0 40px;
+		padding-left: 40px;
+		padding-right: 40px;
 	}
 
 	.articles {
@@ -86,9 +94,26 @@
 			font-size: 15px;
 		}
 	}
-}
+
+	.date {
+    vertical-align: baseline;
+  }
+
 	.article-title {
-		font-size: 17px;
+		font-size: 14px;
+		line-height: 1.29;
+
+		&_post {
+			margin-top: 0;
+		}
+	}
+
+	.tag-row {
+		&__item {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 	}
 
 	.sidebar {
@@ -102,49 +127,107 @@
 				margin-bottom: 60px;
 			}
 		}
-}
+	}
 
-.post {
-
-		&__image {
-		}
-
-		&__description {
-		}
-}
-.post_sidebar {
-}
-.date {
-}
-.article-title {
-}
-.article-title_post {
-}
-.visualy-hidden {
-}
-.button {
-}
-.button_search {
-}
-.button_submit {
-}
-.tags-list {
-
+	.tags-list {
 		&__item {
+			&:hover {
+			background-color: rgba(244,243,241,0);
+			border: 3px solid #b59f5b;
+			}
 		}
-
-		&__link {
-		}
-}
-.topics-list {
-
+	}
+	.topics-list {
 		&__item {
+			&:hover {
+				color: #b59f5b;
+			}
 		}
+	}
 
-		&__link {
+	.products {
+		margin: 0 auto;
+		width: 641px;
+	}
+
+	.products-wrapper {
+		width: 100%;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.product {
+		width: 48%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+
+		&:nth-child(odd) {
+			margin-right: 4%;
 		}
-}
-.topics-counter {
-}
-
+	
+			&__image {
+				w
+			}
+	
+			&__description {
+				flex-grow: 1;
+			}
+	
+			&__title {
+			}
+	
+			&__text {
+			}
+	
+			&__offer {
+			}
+	
+			&__prices {
+			}
+	}
+	.higlighted-link {
+	}
+	.higlighted-text {
+	}
+	.price {
+	
+			&--old {
+			}
+	
+			&--new {
+			}
+	
+			&--hidden {
+			}
+	}
+	.shop-link {
+	}
+	.footer {
+	
+			&__socials {
+			}
+	
+			&__social {
+	
+				&--twitter {
+				}
+	
+				&--pinterest {
+				}
+	
+				&--facebook {
+				}
+	
+				&--instagram {
+				}
+	
+				&--tumblr {
+				}
+			}
+	
+			&__copyright {
+			}
+	}
 }

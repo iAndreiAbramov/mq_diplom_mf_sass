@@ -303,7 +303,7 @@
 
       <aside class="sidebar">
         <div class="sidebar__block">
-          <h2 class="title title_big">новые посты</h2>
+          <h2 class="title title_sidebar">новые посты</h2>
           <article class="post post_sidebar">
             <img src="./images/2.jpg" alt="Утро на пляже" class="post__image">
             <div class="post__description">
@@ -370,7 +370,7 @@
         </div>
 
         <div class="sidebar__block">
-          <h2 class="title title_big">
+          <h2 class="title title_sidebar">
             рассылка
           </h2>
           <form action="#" class="sidebar__form sidebar__form_submit">
@@ -386,7 +386,7 @@
         </div>
 
         <div class="sidebar__block">
-          <h2 class="title title_big">теги</h2>
+          <h2 class="title title_sidebar">теги</h2>
           <ul class="tags-list">
             <li class="tags-list__item">
               <a href="#" class="tags-list__link">Fashion</a>
@@ -416,7 +416,7 @@
         </div>
 
         <div class="sidebar__block">
-          <h2 class="title title_big">
+          <h2 class="title title_sidebar">
             темы
           </h2>
           <ul class="topics-list">
@@ -450,17 +450,122 @@
       
     </div>
     
-    <aside class="producsts">
+    <aside class="products container">
       <h2 class="title title_big">наши изделия</h2>
     
       <div class="products-wrapper">
+
         <article class="product">
-    
+          <picture class="product__image">
+            <source 
+            media="(min-width: 641px) and (max-width: 1200px)"
+            srcset="./images/shop-item-tablet1.jpg">
+            <source 
+            media="(min-width: 1201px)"
+            srcset="./images/shop-item-desk1.jpg">
+            <img src="./images/shop-item-mobile1.jpg" alt="Подушка с принтом">
+          </picture>
+
+          <div class="product__description">
+            <h3 class="product__title">подушки на диван</h3>
+            <p class="product__text">Набор из двух подушек с модными принтами. Видео о создании <a href="#" class="higlighted-link"><span class="higlighted-text">здесь</span></a>.</p>
+
+            <div class="product__offer">
+
+              <div class="product__prices">
+                <span class="price price--old">1000&#8381</span>
+                <span class="price price--new">800&#8381</span>
+              </div>
+
+              <a href="#" class="shop-link">в магазин</a>
+
+            </div>
+          </div>
         </article>
+
+        <article class="product">
+          <picture class="product__image">
+            <source 
+            media="(min-width: 641px) and (max-width: 1200px)"
+            srcset="./images/shop-item-tablet2.jpg">
+            <source 
+            media="(min-width: 1201px)"
+            srcset="./images/shop-item-desk2.jpg">
+            <img src="./images/shop-item-mobile2.jpg" alt="Подушка с принтом">
+          </picture>
+
+          <div class="product__description">
+            <h3 class="product__title">Кукла «Зайчик»</h3>
+            <p class="product__text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <span class="higlighted-text">весенняя серия постов в блоге</span> и несколько подкастов.</p>
+
+            <div class="product__offer">
+
+              <div class="product__prices">
+                <span class="price price--old price--hidden">1000&#8381</span>
+                <span class="price price--new">3500&#8381</span>
+              </div>
+
+              <a href="#" class="shop-link">в магазин</a>
+
+            </div>
+          </div>
+        </article>
+
+        <article class="product">
+          <picture class="product__image">
+            <source 
+            media="(min-width: 641px) and (max-width: 1200px)"
+            srcset="./images/shop-item-tablet3.jpg">
+            <source 
+            media="(min-width: 1201px)"
+            srcset="./images/shop-item-desk3.jpg">
+            <img src="./images/shop-item-mobile3.jpg" alt="Подушка с принтом">
+          </picture>
+
+          <div class="product__description">
+            <h3 class="product__title">Шестиугольная рамка</h3>
+            <p class="product__text">Необычная рамка для украшения дома из видео <span class="higlighted-text">«Как сделать рамку из подручных средств за 30 минут»</span></p>
+
+            <div class="product__offer">
+
+              <div class="product__prices">
+                <span class="price price--old">500&#8381</span>
+                <span class="price price--new">400&#8381</span>
+              </div>
+
+              <a href="#" class="shop-link">в магазин</a>
+
+            </div>
+          </div>
+        </article>
+
       </div>
     </aside>
     
     </div>
+
+    <footer class="footer container">
+      <div class="footer__socials">
+        <div class="footer__social footer__social--twitter">
+          <span class="visualy-hidden">twitter</span>
+        </div>
+        <div class="footer__social footer__social--pinterest">
+          <span class="visualy-hidden">pinterest</span>
+        </div>
+        <div class="footer__social footer__social--facebook">
+          <span class="visualy-hidden">facebook</span>
+        </div>
+        <div class="footer__social footer__social--instagram">
+          <span class="visualy-hidden">instagram</span>
+        </div>
+        <div class="footer__social footer__social--tumblr">
+          <span class="visualy-hidden">tumblr</span>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        Copyright © 2009–2019 City Blog LLC
+      </div>
+    </footer>
 
 </body>
 

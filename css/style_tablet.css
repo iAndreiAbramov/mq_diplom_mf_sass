@@ -49,7 +49,11 @@
   }
   .title_big {
     font-size: 18px;
-    margin-bottom: 18px;
+    margin-bottom: 24px;
+  }
+  .title_sidebar {
+    font-size: 14px;
+    margin-bottom: 24px;
   }
   .trend {
     width: calc(50% - 1.5px);
@@ -75,7 +79,8 @@
     margin-bottom: 50px;
   }
   .container {
-    padding: 0 40px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .articles {
     -ms-flex-negative: 0;
@@ -90,11 +95,77 @@
   .article__preview {
     font-size: 15px;
   }
+  .date {
+    vertical-align: baseline;
+  }
+  .article-title {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+  .article-title_post {
+    margin-top: 0;
+  }
+  .tag-row__item:hover {
+    text-decoration: underline;
+  }
   .sidebar {
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
             flex-grow: 0;
     padding: 0;
+  }
+  .sidebar__block {
+    margin-bottom: 60px;
+  }
+  .sidebar__block:first-child {
+    margin-bottom: 60px;
+  }
+  .tags-list__item:hover {
+    background-color: rgba(244, 243, 241, 0);
+    border: 3px solid #b59f5b;
+  }
+  .topics-list__item:hover {
+    color: #b59f5b;
+  }
+  .products {
+    margin: 0 auto;
+    min-width: 641px;
+  }
+  .products-wrapper {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .product {
+    width: 48%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .product:nth-child(odd) {
+    margin-right: 4%;
+  }
+  .product__description {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 /*# sourceMappingURL=style_tablet.css.map */
