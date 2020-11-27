@@ -456,14 +456,14 @@
       <div class="products-wrapper">
 
         <article class="product">
-          <picture class="product__image">
+          <picture>
             <source 
             media="(min-width: 641px) and (max-width: 1200px)"
             srcset="./images/shop-item-tablet1.jpg">
             <source 
             media="(min-width: 1201px)"
             srcset="./images/shop-item-desk1.jpg">
-            <img src="./images/shop-item-mobile1.jpg" alt="Подушка с принтом">
+            <img src="./images/shop-item-mobile1.jpg" alt="Подушка с принтом" class="product__image">
           </picture>
 
           <div class="product__description">
@@ -484,14 +484,14 @@
         </article>
 
         <article class="product">
-          <picture class="product__image">
+          <picture>
             <source 
             media="(min-width: 641px) and (max-width: 1200px)"
             srcset="./images/shop-item-tablet2.jpg">
             <source 
             media="(min-width: 1201px)"
             srcset="./images/shop-item-desk2.jpg">
-            <img src="./images/shop-item-mobile2.jpg" alt="Подушка с принтом">
+            <img src="./images/shop-item-mobile2.jpg" alt="Подушка с принтом" class="product__image">
           </picture>
 
           <div class="product__description">
@@ -512,14 +512,14 @@
         </article>
 
         <article class="product">
-          <picture class="product__image">
+          <picture>
             <source 
             media="(min-width: 641px) and (max-width: 1200px)"
             srcset="./images/shop-item-tablet3.jpg">
             <source 
             media="(min-width: 1201px)"
             srcset="./images/shop-item-desk3.jpg">
-            <img src="./images/shop-item-mobile3.jpg" alt="Подушка с принтом">
+            <img src="./images/shop-item-mobile3.jpg" alt="Подушка с принтом" class="product__image">
           </picture>
 
           <div class="product__description">
@@ -566,6 +566,41 @@
         Copyright © 2009–2019 City Blog LLC
       </div>
     </footer>
+
+    <aside class="popup">
+      <form action="#" class="popup-form">
+
+        <img src="./svg/form-x.svg" alt="Закрыть форму" class="popup-form__close">
+
+        <h2 class="title title-popup">ваш фидбек</h2>
+
+        <label for="#" class="popup-form__row">
+          <span class="popup-form__hint">как часто вы заходите на сайт?</span>
+          <select name="popup-form__select" id="popup-select">
+            <option value="1" selected>Почти каждый день</option>
+            <option value="2" selected>Раз в несколько дней</option>
+            <option value="3" selected>Раз в несколько недель</option>
+            <option value="4" selected>Несколько раз в год</option>
+          </select>
+        </label>
+
+        <label for="#" class="popup-form__row">
+          <span class="popup-form__hint">Вы подписаны на email-рассылку?</span>
+          <input type="radio" name="radio-email" checked>
+          <span class="input-radio__hint">Да</span>
+          <input type="radio" name="radio-email">
+          <span class="input-radio__hint">Нет</span>
+        </label>
+
+        <label for="#" class="popup-form__row">
+          <span class="popup-form__hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+          <textarea name="popup-textarea" id="popup-textarea" placeholder="Может больше рецептов?"></textarea>
+        </label>
+
+        <button class="button button--popup">Отправить</button>
+
+      </form>
+    </aside>
 
 </body>
 

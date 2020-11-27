@@ -199,4 +199,31 @@
       }
     }
   }
+
+  .products-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .product {
+      width: 30%;
+      margin-right: 5%;
+      margin-bottom: 0;
+
+      &:last-child {
+        margin-right: 0;
+      }
+  
+      &__description {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+      }
+    }
+  
+  .footer {
+    &__social {
+      margin-right: 5%;
+    }
+  }
+
 }
