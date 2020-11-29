@@ -3,9 +3,9 @@
 }
 
 body {
-  position: relative;
   font-family: "Open Sans", Arial, serif;
   min-width: 320px;
+  margin: 0;
 }
 
 .container {
@@ -79,6 +79,7 @@ body {
   order: 0;
   width: 26px;
   height: 26px;
+  z-index: 91;
 
   &__link {
     position: absolute;
@@ -105,6 +106,21 @@ body {
       height: 3px;
       background-color: #ffffff;
     }
+
+    &--close {
+
+      &::before {
+        content: "";
+        top: 50%;
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        content: "";
+        top: 50%;
+        transform: rotate(-45deg);
+      }
+    }
   }
 
   &__text {
@@ -119,6 +135,55 @@ body {
   width: 1px;
   height: 1px;
   clip: rect(1px, 1px, 1px, 1px);
+}
+
+.mobile-menu-wrapper {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background: #999999;
+  z-index: 90;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+
+    &:first-child {
+      margin-top: 100px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 .menu {
@@ -230,19 +295,19 @@ body {
 }
 
 .trend-flowers {
-  background-image: url('../images/trend1.jpg');
+  background-image: url("../images/trend1.jpg");
 }
 
 .trend-cheese {
-  background-image: url('../images/trend2.jpg');
+  background-image: url("../images/trend2.jpg");
 }
 
 .trend-mountains {
-  background-image: url('../images/trend3.jpg');
+  background-image: url("../images/trend3.jpg");
 }
 
 .trend-lime {
-  background-image: url('../images/trend4.jpg');
+  background-image: url("../images/trend4.jpg");
 }
 
 .articles {
@@ -267,7 +332,7 @@ body {
     width: 100%;
     margin-bottom: 14px;
   }
-  
+
   &__description {
     margin-bottom: 24px;
   }
@@ -375,7 +440,7 @@ body {
 
 .post {
   display: flex;
-  
+
   &_sidebar {
     margin-bottom: 22px;
 
@@ -437,7 +502,7 @@ body {
     box-sizing: content-box;
     margin: 7px 6px 0 0;
     padding: 7px 9px;
-    background-color: rgba(244,243,241,0);
+    background-color: rgba(244, 243, 241, 0);
     border: 3px solid #eeeeee;
     font-size: 12px;
     color: #0f0d0e;
@@ -455,7 +520,6 @@ body {
   }
 }
 .topics-list {
-
   &__item {
     display: block;
     margin-bottom: 12px;
@@ -505,52 +569,51 @@ body {
   margin-bottom: 25px;
   text-align: center;
 
-    &:last-child {
-      margin-bottom: 0;
-    }
+  &:last-child {
+    margin-bottom: 0;
+  }
 
-    &__image {
-      position: relative;
-      width: 87%;
-      text-align: center;
-    }
+  &__image {
+    position: relative;
+    width: 87%;
+    text-align: center;
+  }
 
-		&__description {
-      position: relative;
-      margin-top: -30px;
-      padding: 55px 22px 25px;
-      min-width: 100%;
-      border: 3px solid #b59f5b;
-      color: #0f0d0e;
-      text-align: left;
-		}
+  &__description {
+    position: relative;
+    margin-top: -30px;
+    padding: 55px 22px 25px;
+    min-width: 100%;
+    border: 3px solid #b59f5b;
+    color: #0f0d0e;
+    text-align: left;
+  }
 
-		&__title {
-      font-size: 17px;
-      line-height: 1.29;
-      font-weight: 700;
-      text-transform: uppercase;
-      margin-bottom: 6px;
-		}
+  &__title {
+    font-size: 17px;
+    line-height: 1.29;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
 
-		&__text {
-      margin-bottom: 12px;
-      font-size: 15px;
-      line-height: 1.47;
-    }
-    
+  &__text {
+    margin-bottom: 12px;
+    font-size: 15px;
+    line-height: 1.47;
+  }
 
-		&__offer {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 25px;
-		}
+  &__offer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
 
-		&__prices {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-		}
+  &__prices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .higlighted-link {
@@ -565,18 +628,18 @@ body {
   display: block;
   font-weight: 700;
 
-		&--old {
-      font-size: 14px;
-      text-decoration: line-through;
-		}
+  &--old {
+    font-size: 14px;
+    text-decoration: line-through;
+  }
 
-		&--new {
-      font-size: 20px;
-    }
-    
-    &--hidden {
-      display: none;
-    }
+  &--new {
+    font-size: 20px;
+  }
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .shop-link {
@@ -603,7 +666,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 30px 17%;
-    background-color: #f4f7f6; 
+    background-color: #f4f7f6;
   }
 
   &__social {
@@ -645,69 +708,168 @@ body {
   }
 }
 
-  .popup {
-    padding: 0;
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-color: #000000;
-      opacity: 0.6;
-      z-index: 10;
-    }
+  &--hidden {
+    display: none;
   }
 
-  .popup-form {
-    position: fixed;
-    z-index: 99;
-    top: 50%;
-    left: 50%;
-    width: calc(100% - 30px);
-    padding: 30px;
-    transform: translate(-50%, -50%);
-    background-color: #ffffff;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.6;
+    z-index: 3;
+  }
 
-    &__close {
-      display: block;
-      margin-top: -65px;
-      margin-right: -15px;
+  &__wraper {
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 290px;
+    max-width: 390px;
+    padding: 0 10px;
+    z-index: 99;
+
+    &-close {
+      align-self: flex-end;
       width: 27px;
       height: 27px;
+      margin-bottom: 5px;
     }
+  }
+}
 
-    &__row {
-      display: block;
-      margin-bottom: 35px;
+.popup-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px;
+  background-color: #ffffff;
+  z-index: 99;
+
+  &__select {
+    -webkit-appearance: none;
+    -moz-apperance: none;
+    border: none;
+    width: 100%;
+    height: 48px;
+    background-color: #f3f7f5;
+    background-image: url("../svg/form-arrows.svg");
+    background-size: 10px 20px;
+    background-repeat: no-repeat;
+    background-position: right 14px top 50%;
+
+    &:focus {
+      background-color: #f4f7f6;
+      border: 1px solid #b59f5b;
     }
-
-      &__hint {
-        display: block;
-        font-size: 13px;
-        color: #000000;
-        font-weight: 400;
-      }
   }
 
-  .title-popup {
-    margin: 0;
-    padding: 0;
+  &__row {
+    display: block;
+    margin-bottom: 35px;
   }
 
-  .input-radio {
-  
-      &__hint {
-
-      }
+  &__hint {
+    display: block;
+    font-size: 13px;
+    line-height: 1.43;
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 12px;
   }
 
-  .button {
-   
-      &--popup {
-        display: block;
-      }
+  &__radio-group {
+    display: flex;
   }
-  
+
+  &__radio-button {
+    display: flex;
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__textarea {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 130px;
+    max-height: 250px;
+    padding: 20px;
+    -webkit-appearance: none;
+    -moz-apperance: none;
+    border: none;
+    background-color: #f3f7f5;
+    font-size: 13px;
+    color: #000000;
+    font-weight: 400;
+
+    &:focus {
+      background-color: #f4f7f6;
+      border: 1px solid #b59f5b;
+    }
+  }
+}
+
+.title-popup {
+  margin: 0;
+  padding: 0;
+}
+
+.input-radio {
+  position: absolute;
+  z-index: 4;
+  transform: translate(0, 75%);
+  display: none;
+
+  &__hint {
+    display: inline-block;
+    font-size: 13px;
+    color: #000000;
+
+    &::before {
+      content: "";
+      position: relative;
+      top: 25%;
+      display: inline-block;
+      margin-right: 5px;
+      width: 24px;
+      height: 24px;
+      background: url("../svg/form-empty-circle.svg") center center / cover no-repeat;
+    }
+  }
+
+  &:checked ~ .input-radio__hint::before {
+    background: url("../svg/form-circle.svg") center center / cover no-repeat;
+  }
+}
+
+.button {
+  &--popup {
+    height: 48px;
+    display: block;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}

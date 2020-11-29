@@ -99,9 +99,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-bottom: 50px;
   }
   .articles {
@@ -109,6 +109,7 @@
         -ms-flex-positive: 1;
             flex-grow: 1;
     width: 56%;
+    max-width: 770px;
     margin-right: 5%;
     margin-bottom: 0;
   }

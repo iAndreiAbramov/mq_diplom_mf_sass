@@ -15,6 +15,31 @@
 <body>
 
   <header class="main-header container">
+    <div class="mobile-menu-wrapper mobile-menu-wrapper--hidden">
+      <nav class="mobile-menu">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">Главная</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">посты</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">статьи</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">теги</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">темы</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
     <div class="content-wrapper">
       <div class="main-header__row">
         <nav class="menu">
@@ -117,7 +142,7 @@
     </aside>
 
     <div class="page-content container">
-    
+
       <main class="articles">
         <article class="article">
 
@@ -447,28 +472,25 @@
           </ul>
         </div>
       </aside>
-      
+
     </div>
-    
+
     <aside class="products container">
       <h2 class="title title_big">наши изделия</h2>
-    
+
       <div class="products-wrapper">
 
         <article class="product">
           <picture>
-            <source 
-            media="(min-width: 641px) and (max-width: 1200px)"
-            srcset="./images/shop-item-tablet1.jpg">
-            <source 
-            media="(min-width: 1201px)"
-            srcset="./images/shop-item-desk1.jpg">
+            <source media="(min-width: 641px) and (max-width: 1200px)" srcset="./images/shop-item-tablet1.jpg">
+            <source media="(min-width: 1201px)" srcset="./images/shop-item-desk1.jpg">
             <img src="./images/shop-item-mobile1.jpg" alt="Подушка с принтом" class="product__image">
           </picture>
 
           <div class="product__description">
             <h3 class="product__title">подушки на диван</h3>
-            <p class="product__text">Набор из двух подушек с модными принтами. Видео о создании <a href="#" class="higlighted-link"><span class="higlighted-text">здесь</span></a>.</p>
+            <p class="product__text">Набор из двух подушек с модными принтами. Видео о создании <a href="#"
+                class="higlighted-link"><span class="higlighted-text">здесь</span></a>.</p>
 
             <div class="product__offer">
 
@@ -485,18 +507,15 @@
 
         <article class="product">
           <picture>
-            <source 
-            media="(min-width: 641px) and (max-width: 1200px)"
-            srcset="./images/shop-item-tablet2.jpg">
-            <source 
-            media="(min-width: 1201px)"
-            srcset="./images/shop-item-desk2.jpg">
+            <source media="(min-width: 641px) and (max-width: 1200px)" srcset="./images/shop-item-tablet2.jpg">
+            <source media="(min-width: 1201px)" srcset="./images/shop-item-desk2.jpg">
             <img src="./images/shop-item-mobile2.jpg" alt="Подушка с принтом" class="product__image">
           </picture>
 
           <div class="product__description">
             <h3 class="product__title">Кукла «Зайчик»</h3>
-            <p class="product__text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <span class="higlighted-text">весенняя серия постов в блоге</span> и несколько подкастов.</p>
+            <p class="product__text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <span
+                class="higlighted-text">весенняя серия постов в блоге</span> и несколько подкастов.</p>
 
             <div class="product__offer">
 
@@ -513,18 +532,15 @@
 
         <article class="product">
           <picture>
-            <source 
-            media="(min-width: 641px) and (max-width: 1200px)"
-            srcset="./images/shop-item-tablet3.jpg">
-            <source 
-            media="(min-width: 1201px)"
-            srcset="./images/shop-item-desk3.jpg">
+            <source media="(min-width: 641px) and (max-width: 1200px)" srcset="./images/shop-item-tablet3.jpg">
+            <source media="(min-width: 1201px)" srcset="./images/shop-item-desk3.jpg">
             <img src="./images/shop-item-mobile3.jpg" alt="Подушка с принтом" class="product__image">
           </picture>
 
           <div class="product__description">
             <h3 class="product__title">Шестиугольная рамка</h3>
-            <p class="product__text">Необычная рамка для украшения дома из видео <span class="higlighted-text">«Как сделать рамку из подручных средств за 30 минут»</span></p>
+            <p class="product__text">Необычная рамка для украшения дома из видео <span class="higlighted-text">«Как
+                сделать рамку из подручных средств за 30 минут»</span></p>
 
             <div class="product__offer">
 
@@ -541,67 +557,83 @@
 
       </div>
     </aside>
-    
+
+  </div>
+
+  <footer class="footer container">
+    <div class="footer__socials">
+      <div class="footer__social footer__social--twitter">
+        <span class="visualy-hidden">twitter</span>
+      </div>
+      <div class="footer__social footer__social--pinterest">
+        <span class="visualy-hidden">pinterest</span>
+      </div>
+      <div class="footer__social footer__social--facebook">
+        <span class="visualy-hidden">facebook</span>
+      </div>
+      <div class="footer__social footer__social--instagram">
+        <span class="visualy-hidden">instagram</span>
+      </div>
+      <div class="footer__social footer__social--tumblr">
+        <span class="visualy-hidden">tumblr</span>
+      </div>
     </div>
+    <div class="footer__copyright">
+      Copyright © 2009–2019 City Blog LLC
+    </div>
+  </footer>
 
-    <footer class="footer container">
-      <div class="footer__socials">
-        <div class="footer__social footer__social--twitter">
-          <span class="visualy-hidden">twitter</span>
-        </div>
-        <div class="footer__social footer__social--pinterest">
-          <span class="visualy-hidden">pinterest</span>
-        </div>
-        <div class="footer__social footer__social--facebook">
-          <span class="visualy-hidden">facebook</span>
-        </div>
-        <div class="footer__social footer__social--instagram">
-          <span class="visualy-hidden">instagram</span>
-        </div>
-        <div class="footer__social footer__social--tumblr">
-          <span class="visualy-hidden">tumblr</span>
-        </div>
-      </div>
-      <div class="footer__copyright">
-        Copyright © 2009–2019 City Blog LLC
-      </div>
-    </footer>
+  <aside class="popup popup--hidden">
+    <div class="popup__wraper">
+      <img src="./svg/form-x.svg" alt="Закрыть форму" class="popup__wraper-close">
 
-    <aside class="popup">
       <form action="#" class="popup-form">
-
-        <img src="./svg/form-x.svg" alt="Закрыть форму" class="popup-form__close">
 
         <h2 class="title title-popup">ваш фидбек</h2>
 
-        <label for="#" class="popup-form__row">
-          <span class="popup-form__hint">как часто вы заходите на сайт?</span>
-          <select name="popup-form__select" id="popup-select">
-            <option value="1" selected>Почти каждый день</option>
-            <option value="2" selected>Раз в несколько дней</option>
-            <option value="3" selected>Раз в несколько недель</option>
-            <option value="4" selected>Несколько раз в год</option>
-          </select>
-        </label>
+        <div class="popup-form__row">
+          <label>
+            <span class="popup-form__hint">Как часто вы заходите на сайт?</span>
+            <select name="popup-form-select" id="popup-select" class="popup-form__select">
+              <option value="1" selected class="popup-form__hint">Почти каждый день</option>
+              <option value="2" selected class="popup-form__hint">Раз в несколько дней</option>
+              <option value="3" selected class="popup-form__hint">Раз в несколько недель</option>
+              <option value="4" selected class="popup-form__hint">Несколько раз в год</option>
+            </select>
+          </label>
+        </div>
 
-        <label for="#" class="popup-form__row">
+        <div class="popup-form__row">
           <span class="popup-form__hint">Вы подписаны на email-рассылку?</span>
-          <input type="radio" name="radio-email" checked>
-          <span class="input-radio__hint">Да</span>
-          <input type="radio" name="radio-email">
-          <span class="input-radio__hint">Нет</span>
-        </label>
+          <div class="popup-form__radio-group">
 
-        <label for="#" class="popup-form__row">
-          <span class="popup-form__hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
-          <textarea name="popup-textarea" id="popup-textarea" placeholder="Может больше рецептов?"></textarea>
-        </label>
+            <label class="popup-form__radio-button">
+              <input type="radio" name="radio-email" id="radio-yes" checked class="input-radio">
+              <span class="input-radio__hint">Да</span>
+            </label>
+            <label class="popup-form__radio-button">
+              <input type="radio" name="radio-email" class="input-radio">
+              <span class="input-radio__hint">Нет</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="popup-form__row">
+          <label>
+            <span class="popup-form__hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+            <textarea name="popup-textarea" id="popup-textarea" placeholder="Может больше рецептов?"
+              class="popup-form__textarea"></textarea>
+          </label>
+        </div>
 
         <button class="button button--popup">Отправить</button>
 
       </form>
-    </aside>
+    </div>
+  </aside>
 
+  <script src="./scrypts/mob_menu.js"></script>
+  <script src="./scrypts/popup.js"></script>
 </body>
 
 </html>
